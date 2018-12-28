@@ -16,8 +16,8 @@ class WordPageViewController: UIPageViewController {
         dataSource = self
         
         // show test view controller
-        let viewController = UIViewController(nibName: nil, bundle: nil)
-        viewController.view.backgroundColor = .blue
+        let viewController = UIViewController(nibName: "WordViewController", bundle: nil)
+        viewController.view.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.8549019608, blue: 0.7803921569, alpha: 1)
         setViewControllers([viewController], direction: .forward, animated: false)
     }
 
@@ -26,8 +26,9 @@ class WordPageViewController: UIPageViewController {
 extension WordPageViewController: UIPageViewControllerDataSource {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        let viewController = UIViewController(nibName: nil, bundle: nil)
-        viewController.view.backgroundColor = .blue
+
+        let viewController = UIViewController(nibName: "WordViewController", bundle: nil)
+        viewController.view.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.8549019608, blue: 0.7803921569, alpha: 1)
         return viewController // show test view controller
     }
     
