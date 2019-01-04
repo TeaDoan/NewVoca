@@ -13,6 +13,10 @@
 		B006E1F121D6C85600ED3197 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B006E1F021D6C85600ED3197 /* Home.storyboard */; };
 		B006E1F521D6CC4800ED3197 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006E1F421D6CC4800ED3197 /* TabBarViewController.swift */; };
 		B006E1F721D6CF6100ED3197 /* WordPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B006E1F621D6CF6100ED3197 /* WordPageViewController.swift */; };
+		B006E1FB21D6D54600ED3197 /* WordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B006E1F921D6D54600ED3197 /* WordViewController.xib */; };
+		B041BCEB21DDA5A10055F263 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B041BCE921DDA5A10055F263 /* WordViewController.swift */; };
+		B041BCEE21DE9E580055F263 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B041BCED21DE9E580055F263 /* Networking.swift */; };
+		B041BCF021DE9E6A0055F263 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = B041BCEF21DE9E6A0055F263 /* Word.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B006E1F021D6C85600ED3197 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		B006E1F421D6CC4800ED3197 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B006E1F621D6CF6100ED3197 /* WordPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordPageViewController.swift; sourceTree = "<group>"; };
+		B006E1F921D6D54600ED3197 /* WordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordViewController.xib; sourceTree = "<group>"; };
+		B041BCE921DDA5A10055F263 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
+		B041BCED21DE9E580055F263 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		B041BCEF21DE9E6A0055F263 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		B006E1DD21D6C73900ED3197 /* NewVoca */ = {
 			isa = PBXGroup;
 			children = (
+				B006E1F921D6D54600ED3197 /* WordViewController.xib */,
+				B041BCE921DDA5A10055F263 /* WordViewController.swift */,
 				B006E1F021D6C85600ED3197 /* Home.storyboard */,
 				B006E1F421D6CC4800ED3197 /* TabBarViewController.swift */,
 				B006E1F621D6CF6100ED3197 /* WordPageViewController.swift */,
@@ -63,6 +73,8 @@
 				B006E1E521D6C73C00ED3197 /* Assets.xcassets */,
 				B006E1E721D6C73C00ED3197 /* LaunchScreen.storyboard */,
 				B006E1EA21D6C73C00ED3197 /* Info.plist */,
+				B041BCED21DE9E580055F263 /* Networking.swift */,
+				B041BCEF21DE9E6A0055F263 /* Word.swift */,
 			);
 			path = NewVoca;
 			sourceTree = "<group>";
@@ -127,6 +139,7 @@
 			files = (
 				B006E1F121D6C85600ED3197 /* Home.storyboard in Resources */,
 				B006E1E921D6C73C00ED3197 /* LaunchScreen.storyboard in Resources */,
+				B006E1FB21D6D54600ED3197 /* WordViewController.xib in Resources */,
 				B006E1E621D6C73C00ED3197 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +152,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B006E1F721D6CF6100ED3197 /* WordPageViewController.swift in Sources */,
+				B041BCF021DE9E6A0055F263 /* Word.swift in Sources */,
 				B006E1F521D6CC4800ED3197 /* TabBarViewController.swift in Sources */,
+				B041BCEB21DDA5A10055F263 /* WordViewController.swift in Sources */,
+				B041BCEE21DE9E580055F263 /* Networking.swift in Sources */,
 				B006E1DF21D6C73900ED3197 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
