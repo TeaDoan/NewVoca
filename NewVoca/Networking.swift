@@ -31,12 +31,11 @@ class Networking {
                 completion(nil)
                 return
             }
-          
             let jsonDecoder = JSONDecoder()
             do {
                 let wordData = try jsonDecoder.decode(Results.self, from: data)
                 completion(wordData)
-                print(wordData.results?.compactMap({$0}))t
+                print(wordData.results?.compactMap({$0}))
                 return
             } catch let err {
                 print (err.localizedDescription)

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 struct Word : Codable {
     var definition : String?
     var partOfSpeech: String?
@@ -15,7 +16,6 @@ struct Word : Codable {
     var hasTypes : [String]?
     var derivation : [String]?
     var examples : [String]?
-    
 }
 
 struct Results : Codable {
