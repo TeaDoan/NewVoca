@@ -38,3 +38,7 @@ struct Syllables : Codable {
     var count : Int?
     var list : [String]?
 }
+
+struct RandomWord : Codable {
+    var word : String?
+}

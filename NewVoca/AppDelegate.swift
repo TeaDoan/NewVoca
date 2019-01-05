@@ -22,6 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print ("Got somedata back")
          
         }
+        
+        Networking.randomWord { (word) in
+            guard let w = word else {
+                return
+            }
+            print(w.word)
+            print ("it's working")
+        }
+        
+        
         return true
     }
 
