@@ -12,7 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WordViewController" customModule="NewVoca" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="definitionTextView" destination="7g7-s3-QuA" id="TMb-Ni-LT5"/>
+                <outlet property="favoriteButton" destination="6eL-kH-qnV" id="a3A-w0-iiM"/>
+                <outlet property="partOfSpeechLabel" destination="I6u-3B-Xwj" id="307-Sj-fVH"/>
+                <outlet property="titleLabel" destination="Ckf-GH-ySM" id="jcB-Xl-foK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="6rv-Qh-pGv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -23,6 +27,12 @@
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-YX-QXO">
                     <rect key="frame" x="10" y="30" width="355" height="811"/>
                     <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckf-GH-ySM" userLabel="Title Label">
+                            <rect key="frame" x="8" y="0.0" width="355" height="32.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eeb-qm-mPc" userLabel="Top View">
                             <rect key="frame" x="0.0" y="61.5" width="355" height="144"/>
                             <subviews>
@@ -129,13 +139,10 @@ the equality of two expressions for all values of the quantities expressed by le
                                 <constraint firstAttribute="width" constant="56" id="7oe-Ah-sRO"/>
                             </constraints>
                             <state key="normal" backgroundImage="heartActive"/>
+                            <connections>
+                                <action selector="favoriteButtonTapped:" destination="-1" eventType="touchUpInside" id="xmd-ZC-Epm"/>
+                            </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identity" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ckf-GH-ySM">
-                            <rect key="frame" x="8" y="0.0" width="355" height="32.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="6eL-kH-qnV" firstAttribute="centerX" secondItem="0RL-YX-QXO" secondAttribute="centerX" id="21V-em-uKj"/>
