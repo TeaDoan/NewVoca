@@ -21,15 +21,14 @@ class WordViewController: UIViewController {
     }
     
     func getNewWord() {
-        Networking.randomWord { randomWord in
-            guard let randomWord = randomWord else {
+        Networking.randomWord { [weak self] randomWord in
+            guard let self = self, let randomWord = randomWord else {
                 return
             }
             DispatchQueue.main.async {
                 self.titleLabel.text = randomWord.word
             }
             guard let word = randomWord.word else { return }
-            
             Networking.wordNetword(word: word, completion: { result in
                 guard let result = result else {
                     return
@@ -39,7 +38,6 @@ class WordViewController: UIViewController {
                     self.definitionTextView.text = result.results?.first?.definition ?? "no definition"
                 }
             })
-          
         }
     }
     
