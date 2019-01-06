@@ -15,23 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Networking.wordNetword(word:"example") { (json) in
-            guard let json = json else {
-                return
-            }
-            print ("Got somedata back")
-         
-        }
-        
-        Networking.randomWord { (word) in
-            guard let w = word else {
-                return
-            }
-            print(w.word)
-            print ("it's working")
-        }
-        
-        
         return true
     }
 
