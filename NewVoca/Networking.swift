@@ -8,9 +8,8 @@
 
 import Foundation
 
-
 class Networking {
-    static let baseURL  = URL(string:"https://wordsapiv1.p.rapidapi.com/words/")
+    static let baseURL = URL(string:"https://wordsapiv1.p.rapidapi.com/words/")
     static let randomWordURL = URL(string:"https://wordsapiv1.p.rapidapi.com/words/?random=true")
     
     static func wordNetword(word:String,completion: @escaping (Results?) -> Void){
@@ -35,10 +34,9 @@ class Networking {
             do {
                 let wordData = try jsonDecoder.decode(Results.self, from: data)
                 completion(wordData)
-                print(wordData.results?.compactMap({$0}))
                 return
             } catch let err {
-                print (err.localizedDescription)
+                print(err.localizedDescription)
                 completion(nil)
                 return
             }
@@ -47,8 +45,7 @@ class Networking {
     }
     
     static func randomWord(completion: @escaping (RandomWord?) -> Void){
-        guard let url = randomWordURL else {completion(nil); return}
-        print(url.absoluteString)
+        guard let url = randomWordURL else { completion(nil); return }
         var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 30.0)
         request.httpMethod = "GET"
         request.setValue("application/json", forHTTPHeaderField: "Accept")

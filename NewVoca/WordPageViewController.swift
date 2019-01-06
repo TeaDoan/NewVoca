@@ -27,13 +27,13 @@ extension WordPageViewController: UIPageViewControllerDataSource {
 
         let viewController = WordViewController(nibName: "WordViewController", bundle: nil)
         viewController.view.backgroundColor = #colorLiteral(red: 0.4470588235, green: 0.8549019608, blue: 0.7803921569, alpha: 1)
-        return viewController // show test view controller
+        return viewController 
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         let viewController = WordViewController(nibName: "WordViewController", bundle: nil)
         viewController.view.backgroundColor = #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1)
-        return viewController // show test view controller
+        return viewController 
     }
 
 
